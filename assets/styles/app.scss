@@ -7,10 +7,24 @@ body {
 
 #container {
     margin: 2rem;
+
+    .smileyP {
+        margin: 1rem;
+    }
 }
 
-.smileyP {
-    margin: 1rem;
+img {
+    margin-left: 2rem;
+}
+
+#credit {
+    font-size: 1rem;
+    color: #505050;
+    margin: 0 5rem;
+
+    a {
+        color: #5c71b7;
+    }
 }
 
 .alert {
