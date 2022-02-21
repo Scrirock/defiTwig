@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+{% import '_macros/alert.html.twig' as Alert %}
+
+{% block title %}Super page d'accueil{% endblock %}
+
+{% block body %}
+
+    {{ Alert.alert('Les smileys ont bien été convertit', 'info') }}
+
+    <div id="container">
+        <p class="smileyP">{{ "phrase normal :-)" | smiley }}</p>
+        <p class="smileyP">{{ ";-) " | smiley }}</p>
+        <p class="smileyP">{{ "oh je suis etonné :-O" | smiley }}</p>
+        <p class="smileyP">{{ "smiley pas mit ><'" | smiley }}</p>
+        <p class="smileyP">{{ ":-|" | smiley }}</p>
+        <p class="smileyP">{{ "trop marrant :-D" | smiley }}</p>
+    </div>
+
+{% endblock %}
